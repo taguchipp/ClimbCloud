@@ -28,8 +28,8 @@ public class PlayerController : MonoBehaviour
         }    
         //左右移動
         int key = 0;
-        if(Input.GetKey(KeyCode.RightArrow)) key =1;
-        if(Input.GetKey(KeyCode.LeftArrow)) key =-1;
+        if(Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D)) key =1;
+        if(Input.GetKey(KeyCode.LeftArrow)|| Input.GetKey(KeyCode.A)) key =-1;
         //プレイヤーの速度
         float speedx = Mathf.Abs(this.rigid2D.velocity.x);
 
